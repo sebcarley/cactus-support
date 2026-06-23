@@ -1,11 +1,12 @@
 
+
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cactus: PDF Takeoff — Mac construction take-off</title>
-<meta name="description" content="Cactus measures lengths, areas and counts straight from your PDF drawings on the Mac, then exports a clean, categorised summary to Excel — ready for your cost plan. Coming soon to the Mac App Store.">
+<meta name="description" content="Cactus measures lengths, areas and counts straight from your PDF drawings on the Mac, then exports a clean, categorised summary to Excel — ready for your cost plan. Now on the Mac App Store.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF6EC">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15140F">
@@ -17,7 +18,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Cactus: PDF Takeoff">
 <meta property="og:title" content="Cactus: PDF Takeoff — measure drawings on your Mac">
-<meta property="og:description" content="Take off lengths, areas and counts straight from your PDF drawings, then export a clean Excel summary. Coming soon to the Mac App Store.">
+<meta property="og:description" content="Take off lengths, areas and counts straight from your PDF drawings, then export a clean Excel summary. Now on the Mac App Store.">
 <meta property="og:url" content="https://sebcarley.github.io/cactus-support/">
 <meta property="og:image" content="https://sebcarley.github.io/cactus-support/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -25,7 +26,7 @@
 <meta property="og:image:alt" content="Cactus: PDF Takeoff — construction take-off for the Mac">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cactus: PDF Takeoff">
-<meta name="twitter:description" content="Measure construction drawings straight from the PDF, on your Mac. Coming soon to the Mac App Store.">
+<meta name="twitter:description" content="Measure construction drawings straight from the PDF, on your Mac. Now on the Mac App Store.">
 <meta name="twitter:image" content="https://sebcarley.github.io/cactus-support/og-image.png">
 
 <style>
@@ -299,6 +300,22 @@
   }
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+
+  /* ============ APP STORE CTA (now live) ============ */
+  a.nav__cta{text-decoration:none; transition:transform var(--t),box-shadow var(--t),border-color var(--t)}
+  a.nav__cta:hover{transform:translateY(-1px); box-shadow:0 4px 12px var(--shadow); border-color:var(--line-strong); color:var(--ink)}
+  .nav__cta--live .dot{background:var(--green); box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 30%, transparent)}
+  .appstore{display:inline-flex; align-items:center; gap:.75em; text-decoration:none;
+    background:var(--ink); color:var(--paper); border-radius:14px; padding:.72em 1.35em;
+    box-shadow:0 6px 16px var(--shadow-2); transition:transform var(--t),box-shadow var(--t)}
+  .appstore:hover{transform:translateY(-2px); box-shadow:0 12px 26px var(--shadow-3); color:var(--paper)}
+  .appstore .apple{width:26px; height:26px; flex:none}
+  .appstore .lab{display:flex; flex-direction:column; line-height:1.08; text-align:left}
+  .appstore .lab .small{font-size:.72rem; font-weight:500; letter-spacing:.01em; opacity:.92}
+  .appstore .lab .big{font-size:1.2rem; font-weight:680; letter-spacing:-.012em}
+  .hero__price{margin-top:14px; font-family:var(--mono); font-size:.8rem; color:var(--ink-faint); letter-spacing:.02em}
+  .foot__legal a{color:inherit; text-decoration:none}
+  .foot__legal a:hover{color:var(--green-deep)}
 </style>
 </head>
 <body>
@@ -316,7 +333,7 @@
       <a href="#privacy">Privacy</a>
       <a href="#support">Support</a>
     </nav>
-    <span class="nav__cta"><span class="dot"></span>Coming soon</span>
+    <a class="nav__cta nav__cta--live" href="https://apps.apple.com/app/cactus-pdf-takeoff/id6781846582?mt=12" target="_blank" rel="noopener"><span class="dot"></span>Download</a>
   </div>
 </header>
 
@@ -330,11 +347,11 @@
   <h1>Measure your drawings, <span class="em">straight from the PDF.</span></h1>
   <p class="hero__sub">Cactus takes off lengths, areas and counts on your Mac, then exports a clean, categorised summary to Excel — ready to drop into your cost plan. No account, no upload; your drawings never leave your machine.</p>
   <div class="hero__cta">
-    <span class="comingsoon" role="status">
-      <span class="pulse" aria-hidden="true"></span>
-      <span class="label"><b>Coming soon</b><span>Mac App Store</span></span>
-    </span>
-    <a class="notify" href="mailto:sebcarley@outlook.com?subject=Cactus%20—%20let%20me%20know%20at%20launch">Email me when it’s out <span class="arr">→</span></a>
+    <a class="appstore" href="https://apps.apple.com/app/cactus-pdf-takeoff/id6781846582?mt=12" target="_blank" rel="noopener">
+      <svg class="apple" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+      <span class="lab"><span class="small">Download on the</span><span class="big">Mac App Store</span></span>
+    </a>
+    <p class="hero__price">One-time purchase &middot; no subscription</p>
   </div>
 
   <!-- SIGNATURE: a real take-off, in the app -->
@@ -572,7 +589,7 @@
     <p class="foot__meta">Made in the United Kingdom. Your drawings stay on your Mac — nothing is uploaded and no data is collected. Reach me at <a href="mailto:sebcarley@outlook.com">sebcarley@outlook.com</a>.</p>
     <div class="foot__legal">
       <span>© 2026 Ting Tang Surveying</span>
-      <span>Coming soon to the Mac App Store</span>
+      <a href="https://apps.apple.com/app/cactus-pdf-takeoff/id6781846582?mt=12" target="_blank" rel="noopener">Available on the Mac App Store ↗</a>
     </div>
   </div>
 </footer>
